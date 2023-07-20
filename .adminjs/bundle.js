@@ -1,0 +1,14 @@
+(function (designSystem) {
+  'use strict';
+
+  const Dashboard = () => {
+    return /*#__PURE__*/React.createElement(designSystem.Box, null, /*#__PURE__*/React.createElement(designSystem.Text, {
+      textAlign: "center"
+    }, /*#__PURE__*/React.createElement(designSystem.H2, null, "Admin panel")));
+  };
+
+  AdminJS.UserComponents = {};
+  AdminJS.UserComponents.Dashboard = Dashboard;
+
+})(AdminJSDesignSystem);
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYnVuZGxlLmpzIiwic291cmNlcyI6WyIuLi9kYXNoYm9hcmQuanN4IiwiLmVudHJ5LmpzIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEJveCwgSDIsIFRleHQgfSBmcm9tICdAYWRtaW5qcy9kZXNpZ24tc3lzdGVtJ1xuXG5leHBvcnQgY29uc3QgRGFzaGJvYXJkID0gKCkgPT4ge1xuXG4gIHJldHVybiAoXG4gICAgPEJveD5cbiAgICAgIDxUZXh0IHRleHRBbGlnbj1cImNlbnRlclwiPlxuICAgICAgICA8SDI+QWRtaW4gcGFuZWw8L0gyPlxuICAgICAgPC9UZXh0PlxuICAgIDwvQm94PlxuICApXG59XG5cbmV4cG9ydCBkZWZhdWx0IERhc2hib2FyZCIsIkFkbWluSlMuVXNlckNvbXBvbmVudHMgPSB7fVxuaW1wb3J0IERhc2hib2FyZCBmcm9tICcuLi9kYXNoYm9hcmQnXG5BZG1pbkpTLlVzZXJDb21wb25lbnRzLkRhc2hib2FyZCA9IERhc2hib2FyZCJdLCJuYW1lcyI6WyJEYXNoYm9hcmQiLCJSZWFjdCIsImNyZWF0ZUVsZW1lbnQiLCJCb3giLCJUZXh0IiwidGV4dEFsaWduIiwiSDIiLCJBZG1pbkpTIiwiVXNlckNvbXBvbmVudHMiXSwibWFwcGluZ3MiOiI7OztFQUVPLE1BQU1BLFNBQVMsR0FBR0EsTUFBTTtJQUU3QixvQkFDRUMsS0FBQSxDQUFBQyxhQUFBLENBQUNDLGdCQUFHLHFCQUNGRixLQUFBLENBQUFDLGFBQUEsQ0FBQ0UsaUJBQUksRUFBQTtFQUFDQyxJQUFBQSxTQUFTLEVBQUMsUUFBQTtLQUNkSixlQUFBQSxLQUFBLENBQUFDLGFBQUEsQ0FBQ0ksZUFBRSxFQUFDLElBQUEsRUFBQSxhQUFlLENBQ2YsQ0FDSCxDQUFDLENBQUE7RUFFVixDQUFDOztFQ1hEQyxPQUFPLENBQUNDLGNBQWMsR0FBRyxFQUFFLENBQUE7RUFFM0JELE9BQU8sQ0FBQ0MsY0FBYyxDQUFDUixTQUFTLEdBQUdBLFNBQVM7Ozs7OzsifQ==
