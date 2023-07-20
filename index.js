@@ -35,12 +35,27 @@ const start = async () => {
     database: process.env.LOGO_NAME,
   }).init();
 
+  const locale = {
+    translations: {
+      en: {
+        "components": {
+          Login: {
+            properties: {
+              email: "Username",
+            },
+          }
+        },
+      }
+    }
+  }
+
   const admin = new AdminJS({
     branding: {
         logo: false,
         companyName: process.env.LOGO_NAME,
         withMadeWithLove: false
     },
+    locale,
     databases: [db],
     componentLoader,
     dashboard: {
