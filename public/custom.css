@@ -1,0 +1,20 @@
+:root {
+    --accent-color: #61B50D;
+}
+
+section[color="white"].adminjs_Box {
+    background: var(--accent-color);
+}
+
+form[action="/admin/login"] label.adminjs_Label::before {
+    color: var(--accent-color);
+}
+
+form[action="/admin/login"] input:focus {
+    border-color: var(--accent-color);
+}
+
+form[action="/admin/login"] button.adminjs_Button {
+    background: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}

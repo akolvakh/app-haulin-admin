@@ -1,3 +1,5 @@
+import * as url from "url";
+
 import 'dotenv/config'
 import AdminJS, { ComponentLoader } from 'adminjs'
 import express from 'express'
@@ -5,6 +7,8 @@ import Plugin from '@adminjs/express'
 import Adapter, { Database, Resource } from '@adminjs/sql'
 
 const componentLoader = new ComponentLoader()
+
+const __dirname = url.fileURLToPath(new URL('.', import.meta.url))
 
 const Components = {
     Dashboard: componentLoader.add('Dashboard', './dashboard')
@@ -30,6 +34,8 @@ const authenticate = async (email, password) => {
 const start = async () => {
   const app = express()
 
+  app.use(express.static(__dirname + '/public'))
+
   const db = await new Adapter('postgresql', {
     connectionString: process.env.CONNECTION_STRING,
     database: process.env.LOGO_NAME,
@@ -40,6 +46,7 @@ const start = async () => {
       en: {
         "components": {
           Login: {
+            welcomeMessage: "",
             properties: {
               email: "Username",
             },
@@ -60,6 +67,9 @@ const start = async () => {
     componentLoader,
     dashboard: {
         component: Components.Dashboard
+    },
+    assets: {
+      styles: ["/custom.css"]
     }
   });
 
